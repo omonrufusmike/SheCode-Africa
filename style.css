@@ -1,0 +1,439 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+} 
+
+h1 {
+    font-size: 45px;
+    line-height: 2;
+    color: black;
+    
+}
+
+h2 {
+    font-size: 30px;
+    line-height: 0.9;
+    color: black;
+}
+
+h4 {
+    font-size: 20px;
+    color: black;
+}
+
+
+h5 {
+    font-size: 17px;
+    font-weight: 700;
+    color: black;
+ }
+
+h6 {
+   font-size: 12px;
+   font-weight: 700;
+   color: black;
+}
+
+p {
+  font-size: 16px;
+  color: black; 
+  margin: 15px 0 20px 0;
+
+}
+
+button.submit {
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    background-color: purple;
+    margin-top: 35px;
+    margin-bottom: 30px;
+    margin-left: 15px;
+    padding: 12px 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    transition: 0.2s;
+}
+
+body {
+    width: 100%;
+    background-color: rgb(148, 207, 228);
+    }
+
+/******Header *******/
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 28px 80px;
+    background-color: white;
+    box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 9;
+    position: sticky;
+    top: 0;
+    left: 0;
+
+}
+
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 10px 18px;
+    position: relative;
+
+}
+
+#navbar li a,
+#navbar li a.active {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 550;
+    color: #8d6f15;
+    transition: 1s ease;
+
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+       color: rgb(0, 70, 128);
+
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: " ";
+    width: 45px;
+    height: 1px;
+    background-color: green;
+    position: absolute;
+    bottom: -1px;
+    left: 20px;
+
+}
+
+
+/********** Home Page ***********/
+
+#hero {
+
+    background-image: url(images/1.jpg);
+    position: relative;
+    height: 60vh;
+    width: 100%;
+    padding: 0 80px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#hero h4 {
+    padding-top: 25px;
+    padding-bottom: 15px;
+    color: black;
+}
+
+#hero h2 {
+    color: black;
+
+}
+
+#hero h1 {
+    color: black;
+
+}
+
+#hero p {
+    color: black;
+
+}
+
+
+
+/****************Projects**************/
+
+#project {
+    text-align: center;
+    padding-top: 60px;
+}
+
+#project h2{
+    color: black;
+}
+
+#project .pro-container {
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+#project .pro {
+    width: 23%;
+    min-width:250px;
+    padding: 10px 12px;
+    border: 1px solid #dfd9d9;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0. 0.07);
+    margin: 17px 12px;
+    position: relative;
+    transition: 0.2s ease;
+
+}
+
+#project .pro img {
+    width: 100%;
+    border-radius: 25px;
+    
+}
+
+#project .pro .des {
+    text-align: start;
+    padding: 10px 0;
+    
+}
+
+#project .pro .des span {
+    color: red;
+    font-size: 12px;
+
+}
+
+#project .pro .des h5 {
+    color: blueviolet;
+    font-size: 14px;
+    padding-top: 7px;
+}
+
+#project .pro .des p {
+    font-size: 11px;
+    color: rgba(0, 3, 2, 0.7);
+
+}
+
+#project .pro .des h6 {
+    padding-top: 7px;
+    font-size: 12px;
+    color: #1a1a1a;
+    font-weight: 700;
+
+}
+
+
+/**********About Me ********/
+
+
+#about {
+    text-align: center;
+    padding-top: 60px;
+}
+
+#about h2{
+    color: black;
+}
+
+
+/********** Contact Me ***********/
+
+#contact {
+    text-align: center;
+    padding-top: 60px;
+}
+
+#contact h2{
+    color: black;
+}
+
+/********** Footer **********/
+
+
+#footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url(images/banner7.jpg);
+    min-width: 250px;
+    height: 50vh;
+    width: 50%;
+    border-radius: 10px;
+    background-position: center;
+    padding: 20px;
+    margin-left: -90px;
+    position: center;
+
+}
+
+#footer .follow {
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #dfd9d9;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0. 0.07);
+    margin: 17px 12px;
+    position: relative;
+    transition: 0.2s ease;
+
+}
+
+#footer h4 {
+    font-size: 16px;
+
+}
+
+#footer .icon {
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #dfd9d9;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0. 0.07);
+    margin: 17px 12px;
+    position: relative;
+    transition: 0.2s ease;
+
+}
+
+#footer .icon.fabfafacebook {
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #dfd9d9;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0. 0.07);
+    margin: 17px 12px;
+    position: relative;
+    transition: 0.2s ease;
+
+}
+
+#footer .icon.fabfatwitter {
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #dfd9d9;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0. 0.07);
+    margin: 17px 12px;
+    position: relative;
+    transition: 0.2s ease;
+}
+
+
+#footer .icon.fabinstagram {
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #dfd9d9;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0. 0.07);
+    margin: 17px 12px;
+    position: relative;
+    transition: 0.2s ease;
+
+}
+
+#footer .icon.fab.fa.pinterest {
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #dfd9d9;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0. 0.07);
+    margin: 17px 12px;
+    position: relative;
+    transition: 0.2s ease;
+
+}
+
+#submit {
+    display: flex;
+    width: 23%;
+    margin-top: 70px;
+    padding: 15px;
+    margin-left: 15px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+
+
+
+.textarea {
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    background-color: rgba(5, 20, 60, 0.2);
+    margin-top: 35px;
+    margin-bottom: 30px;
+    margin-left: 15px;
+    padding: 12px 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    transition: 0.2s;
+    width: 400px;
+    height: 200px;
+}
+
+
+.email {
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    background-color: rgba(5, 20, 60, 0.2);
+    margin-top: 35px;
+    margin-bottom: 30px;
+    margin-left: 15px;
+    padding: 12px 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    transition: 0.2s;
+    width: 200px;
+    height: 35px;
+   
+}
+
+.name {
+    font-size: 14px;
+    font-weight: 600;
+    color: none;
+    background-color: rgba(5, 20, 60, 0.2);
+    margin-top: 35px;
+    margin-bottom: 30px;
+    margin-left: 15px;
+    padding: 12px 24px 10px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    transition: 0.2s;
+    width: 200px;
+    height: 35px;
+}
+
+button:hover {
+    background-color: white;
+    color: green;
+}
